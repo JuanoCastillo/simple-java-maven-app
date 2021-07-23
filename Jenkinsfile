@@ -10,6 +10,7 @@ pipeline {
     agent any
 
     stages {
+        dir("C:/Git/taller_jcastisi_BeDOs/simple-java-maven-app")
         stage('Build') { 
             steps {
                 sh 'mvn -B -DskipTests clean package' 
